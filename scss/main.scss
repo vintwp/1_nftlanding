@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Roboto&display=swap');
+
+@import '_nullstyles';
+@import '_gradient';
+@import '_header';
+@import '_card';
+@import '_footer';
+@import '_button';
+@import '_section-upsell';
+@import '_section-card';
+@import '_section-hero';
+@import '_section-press';
+@import '_section-promo';
+@import '_section-small';
+@import '_section-showcase';
+
+
+/*COMMON*/
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+a:hover,
+a:hover path,
+.icon:hover path {
+  color: #FF3998 !important;
+  fill: #FF3998;
+  transition: 0.3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $mainFont;
+  color: var(--heading-color);
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+a,
+p {
+  line-height: 1;
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: var(--bg-color);
+  font-family: $mainFont;
+}
+
+.logo-icon path {
+  fill: var(--heading-color);
+}
+
+.section__title_small {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--heading-color);
+}
+
+
+
+
+section {
+  margin-bottom: 120px;
+}
+
+@media (max-width: $tablet) {
+  section,
+  footer {
+    padding: 64px 0 66px 0;
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $laptop) {
+  section, footer {
+      padding: 15px 0 17px 0;
+  }
+}
+
+@media (max-width: $laptop) {
+
+  // section,
+  // footer {
+  //   padding: 64px 0 66px 0;
+  // }
+
+  section {
+    margin-bottom: 0;
+  }
+
+  .container {
+    padding: 0 32px;
+  }
+}
+
+
+@media (max-width: $laptop) {
+
+  .container {
+    max-width: 100vw;
+    width: 100%;
+  }
+}
+
+
+/*Theme change*/
+.theme {
+
+  transform: translate(-50%, -50%);
+  position: fixed;
+  top: 64px;
+  left: 16px;
+  padding: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  z-index: 9999;
+  width: 28px;
+  height: 28px;
+
+  &__change {
+    width: 24px;
+    height: 24px;
+
+  }
+
+  .theme__change[data-theme="dark"] {
+    display: block;
+  }
+
+  .theme__change[data-theme="light"] {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+/*Footer Hero Section*/
+
+
+
+
+
+
+
+
